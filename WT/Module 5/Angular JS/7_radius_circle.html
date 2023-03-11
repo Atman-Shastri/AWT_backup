@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <body ng-app="myapp" ng-controller="myctrl">
+        Enter Radius: <input type="text" ng-model="radius">
+        <input type="submit" value="calculate Area" ng-click="calc(radius)">
+        
+        
+    </body>
+    <script>
+        var app = angular.module("myapp",[])
+        app.controller("myctrl",function($scope){
+            $scope.calc = function(radius){
+            $scope.area=Math.PI*$scope.radius*$scope.radius;
+            alert("Area "+ $scope.area);
+         }
+         
+        });
+    </script>
+</html>

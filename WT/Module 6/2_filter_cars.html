@@ -1,0 +1,14 @@
+<html>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <body ng-app="myapp" ng-controller="myctrl">
+        Find Car: <input type="text" ng-model="search">
+        {{cars|filter:search}}
+    </body>
+    <script>
+        var app = angular.module("myapp",[]).controller("myctrl",function($scope){
+            $scope.cars=["Ferrari","Fortuner","Maruti Suzuki"]
+
+        });
+    </script>
+</html>

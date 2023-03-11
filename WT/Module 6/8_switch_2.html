@@ -1,0 +1,27 @@
+<html>
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+<head></head>
+<body ng-app>
+    <form >
+        Enter Some Text: <input type="text" ng-model="data">
+        <br><br>
+        Select Styling:
+        <select ng-model="styling">
+            <option value=""> Bold and Blue </option>
+            <option value="i"> Italic and Green </option>
+            <option value="u"> Underline and red </option>  
+        </select>
+        <div ng-switch="styling">
+            <b ng-switch-default style="color:blue" >
+            {{data}}</b>
+            <i ng-switch-when="i" style="color:green">
+            {{data}}</i>
+            <u ng-switch-when="u" style="color:red">
+            {{data}}</u>
+        </div>
+    </form>
+</body>
+</html>
+
+

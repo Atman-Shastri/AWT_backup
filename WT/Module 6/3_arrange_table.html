@@ -1,0 +1,32 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <title>Arrange Table</title>
+    <body ng-app="myapp" ng-controller="myctrl">
+        <table border="4">
+            <tr>
+                <th ng-click="orderby('Name')">Name</th>
+                <th ng-click="orderby('rollno')">Roll No</th>
+            </tr>
+        
+            <tr ng-repeat="s in students | orderBy:orderbyme ">
+                <td>{{s.Name}}</td>
+                <td>{{s.rollno}}</td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        angular.module("myapp",[]).controller("myctrl",function($scope){
+            $scope.students = [{Name:"Sandhya",rollno:100},
+                                {Name:"Ayesha",rollno:15},
+                                {Name:"Rita",rollno:31},
+                                {Name:"Seema",rollno:41},
+                                {Name:"Mahima",rollno:101},
+                                {Name:"Sana",rollno:151},
+                                {Name:"Reema",rollno:110},
+                                {Name:"Ayushi",rollno:1}];
+                                $scope.orderby=function(x){
+                                $scope.orderbyme=x;
+         }
+        });
+    </script>
+</html>

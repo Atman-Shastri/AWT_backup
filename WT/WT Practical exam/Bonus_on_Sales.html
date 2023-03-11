@@ -1,0 +1,25 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title></title>
+    <head></head>
+
+    <body ng-app="myApp" ng-controller="myCtrl">
+            Enter Sales: <input type="number" ng-model="sales">
+            <button ng-click="calculate()">Calculate</button>
+            <br>
+            Bonus Amount: {{bonus}}
+        <script>
+                var app=angular.module("myApp",[]);
+                app.controller("myCtrl",function($scope){
+                    $scope.calculate = function(){
+                        if($scope.sales<=2000)
+                        $scope.bonus = "No bonus";
+                        else if($scope.sales<=5000 && $scope.sales>2000)
+                        $scope.bonus=$scope.sales*5/100;
+                        else if($scope.sales>5000)  
+                        $scope.bonus = $scope.sales*10/100;
+                    }
+                });
+        </script>
+    </body>
+</html>

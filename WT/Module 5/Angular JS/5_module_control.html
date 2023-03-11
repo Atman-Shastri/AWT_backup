@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <body ng-app="myapp" ng-controller="myctrl">
+       {{"First Name: " + firstname}}
+        <br><br>{{"Last Name: " + lastname}}
+       
+        
+        
+    </body>
+    <script>
+        var app= angular.module("myapp",[])
+        app.controller("myctrl",function($scope){
+            $scope.firstname = "Sandhya";
+            $scope.lastname = "Santosh";
+           
+        });
+    </script>
+</html>

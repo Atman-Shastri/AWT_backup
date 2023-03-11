@@ -1,0 +1,4 @@
+Write a program to pipe txt file as response
+Write a program to pipe html file as response
+Write a program to close server after 10 seconds
+Write a program to read data from a file and send as response to client when "data" event is triggered

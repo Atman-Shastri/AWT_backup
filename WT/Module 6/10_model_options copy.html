@@ -1,0 +1,16 @@
+<html ng-app>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <head>
+        
+    </head>
+    <body>
+        <form novalidate name="modelform">
+            Enter Last Name: <input type="text" name="name" ng-model="user.lastname" ng-model-options="{updateOn: 'blur'}">
+            <br><br>
+            {{user.lastname}}
+            
+        </form>
+        
+    </body>
+</html>

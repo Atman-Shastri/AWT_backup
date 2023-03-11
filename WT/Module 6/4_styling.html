@@ -1,0 +1,33 @@
+<html>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <head>
+        <style>
+                .redblock{
+                    height: 100px;
+                    width: 100px;
+                    background-color: red;
+                }
+                .yellowblock{
+                    height: 100px;
+                    width: 100px;
+                    background-color: yellow;
+                }
+        </style>
+    </head>
+    <body ng-app>
+       
+        <div ng-class="{redblock:enter,yellowblock:exit}"
+        ng-mouseenter="enter=true;exit=false"
+        ng-mouseleave="enter=false;exit=true">
+            Mouse<span ng-show="enter"> 
+                <br><br>
+                Entered</span>
+                <br><br>
+            <span ng-show="exit">Left the block</span>
+        </div>
+        <br><br>
+        <button type="button">Click Me!</button>
+        </br><br>
+    </body>
+</html>

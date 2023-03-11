@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <body ng-app="myapp" ng-controller="myctrl">
+        Enter Name: <input type="text" ng-model="name">
+        Enter Amount: <input type="text" ng-model="amount">
+        <input type="submit" value="show" ng-click="data()">
+        <br><br>   Name: {{ n | uppercase }}
+        <br><br>  Amount: {{amt | currency:"₹ ":4}}
+        <br><br>  Date: {{date | date: "yyyy/MM/dd" }}
+    </body>
+    <script>
+        var app= angular.module("myapp",[]);
+        app.controller("myctrl",function($scope){
+            $scope.data = function(){
+                $scope.n=$scope.name;
+                $scope.amt=$scope.amount;
+                $scope.date= new Date();
+            }
+        });
+    </script>
+</html>

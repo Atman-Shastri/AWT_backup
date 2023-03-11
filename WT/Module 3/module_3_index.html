@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> Welcome Page </title>
+		<style>
+			#para {
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="para"> Welcome to WT Lab </p>
+		<button onclick="changecolor('orange')"> Orange </button>
+		<button onclick="changecolor('Yellow')"> Yellow </button>
+	</body>
+	<script>
+	function changecolor (colorval) {
+		var pg=document.getElementById("para");
+		pg.style.color=colorval;
+	}
+	</script>
+</html>

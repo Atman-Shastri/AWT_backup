@@ -1,0 +1,22 @@
+<html>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <head></head>
+    <body ng-app>
+        <form novalidate name="DataForm">
+            Enter Name: <input type="text" ng-model="username" name="username" required>
+            <span ng-show="DataForm.username.$error.required && DataForm.username.$touched">Kindly Enter the name</span>
+            <br><br>
+            Email: <input type="email" ng-model="email" name="email" required>
+            <span ng-show="DataForm.email.$error.email">Enter Email in proper format</span>
+            <span ng-show="DataForm.email.$error.required && DataForm.email.$touched">Kindly Enter the email</span>
+            <br><br>
+            Enter Age: <input type="number" ng-model="age" name="age" min="18" max="60" required>
+            <span ng-show="DataForm.age.$error.required && DataForm.age.$touched">Kindly Enter the age</span>
+            <span ng-show="DataForm.age.$error.min">Age is very low</span>
+            <span ng-show="DataForm.age.$error.max">Age is very high</span>
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

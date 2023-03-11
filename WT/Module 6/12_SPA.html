@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js" type="text/javascript"></script> 
+    </head>
+
+    <body ng-app="myApp">
+        <script type="text/ng-template" id="homeContent">
+            <h1>Home</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <script type="text/ng-template" id="aboutUsContent">
+            <h1>About Us</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <script type="text/ng-template" id="blogsContent">
+            <h1>Blogs</h1>
+            <h3>{{message}}</h3>
+        </script>
+
+        <a href="#!">Home</a>
+        <a href="#!aboutus">About Us</a>
+        <a href="#!blogs">Blogs</a>
+        <div ng-view></div>
+
+
+        <script>
+            var app = angular.module("myApp",['ngRoute']);
+            app.config(function($routeProvider){
+                $routeProvider.when("/",{
+                    templateUrl: "homeContent",
+                    controller: "homeController"
+                }).when("/aboutus",{
+                    templateUrl: "aboutUsContent",
+                    controller: "aboutUsController"
+                }).when("/blogs",{
+                    templateUrl: "blogsContent",
+                    controller: "blogsController"
+                }).otherwise({redirectTo:"/"})
+            });
+            app.controller("homeController",function($scope){
+                $scope.message="Hello This is Homepage";
+            });
+            app.controller("aboutUsController",function($scope){
+                $scope.message="Hello This is About us page";
+            });
+            app.controller("blogsController",function($scope){
+                $scope.message="Hello This is Blog page";
+            });
+        </script>
+    </body>
+</html>

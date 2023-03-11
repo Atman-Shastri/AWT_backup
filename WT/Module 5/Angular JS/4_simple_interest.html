@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/javascript"> </script>
+    <body ng-app>
+        Enter Principal: <input type="number" ng-model="principal">
+        <br><br>
+        Enter Years: <input type="number" ng-model="years">
+        <br><br>
+        Interest rate: <input type="number" ng-model="rate">
+        <br><br>
+        <input type="submit" value="Calculate Interest"
+        ng-click="si=(principal*years*rate)/100">
+        {{"Simple interest is "+ si }}
+    </body>
+</html>

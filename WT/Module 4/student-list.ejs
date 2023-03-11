@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <body>
+            <table border="4">
+                <tr>
+                    <th>Name</th>
+                    <th>Phone No</th>
+                  <!--  <th>Address</th> -->
+                </tr>
+                <% if(studentdata.length!=0) {
+                    studentdata.forEach(function(data){
+                        %>
+                        <tr>
+                            <td><%=data.Name %></td>
+                            <td><%=data.Contact %></td>
+                         <!--   <td><%=data.Address %></td> -->
+                        </tr>
+                        <%
+                    })
+                } else {
+                    %>
+                    <tr><td>No Records Found</td></tr>
+                    <%
+                }
+            %>
+            </table>
+        </body>
+    </head>
+</html>
