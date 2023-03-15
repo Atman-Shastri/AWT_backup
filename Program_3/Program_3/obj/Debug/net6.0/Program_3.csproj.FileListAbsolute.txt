@@ -1,0 +1,15 @@
+E:\182\Program_3\Program_3\bin\Debug\net6.0\Program_3.exe
+E:\182\Program_3\Program_3\bin\Debug\net6.0\Program_3.deps.json
+E:\182\Program_3\Program_3\bin\Debug\net6.0\Program_3.runtimeconfig.json
+E:\182\Program_3\Program_3\bin\Debug\net6.0\Program_3.dll
+E:\182\Program_3\Program_3\bin\Debug\net6.0\Program_3.pdb
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.csproj.AssemblyReference.cache
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.GeneratedMSBuildEditorConfig.editorconfig
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.AssemblyInfoInputs.cache
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.AssemblyInfo.cs
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.csproj.CoreCompileInputs.cache
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.dll
+E:\182\Program_3\Program_3\obj\Debug\net6.0\refint\Program_3.dll
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.pdb
+E:\182\Program_3\Program_3\obj\Debug\net6.0\Program_3.genruntimeconfig.cache
+E:\182\Program_3\Program_3\obj\Debug\net6.0\ref\Program_3.dll
