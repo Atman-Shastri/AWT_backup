@@ -14,5 +14,5 @@ namespace Firstproject_consoleapp_182
             rate = Convert.ToDouble(Console.ReadLine());
         }
     }
-    }
-}
+ }
+

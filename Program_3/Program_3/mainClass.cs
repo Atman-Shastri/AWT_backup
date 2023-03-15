@@ -10,7 +10,6 @@ namespace Program_3
     {
         public static void Main(string[] args)
         {
-
             listBox l = new listBox();
             checkBox c = new checkBox();
             int lh, lw, ch, cw;
