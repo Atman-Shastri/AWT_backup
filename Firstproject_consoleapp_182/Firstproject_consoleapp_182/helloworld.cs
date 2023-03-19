@@ -1,53 +1,54 @@
-﻿using System;
+﻿//using System;
 
-namespace Firstproject_consoleapp_182
+//namespace Firstproject_consoleapp_182
 
-{
-    class helloworld
-    {
-        static void Main(string[] args)
-        {
-            //Console.WriteLine("Hello World");
-            //Console.ReadKey();
+//{
+//    class helloworld
+//    {
+//        static void Main(string[] args)
+//        {
+//            //Console.WriteLine("Hello World");
+//            //Console.ReadKey();
 
-            //int i = 75;
-            // float f = 53.005f;
-            // double d = 2345.7652;
-            // bool b = true;
+//            //int i = 75;
+//            // float f = 53.005f;
+//            // double d = 2345.7652;
+//            // bool b = true;
 
-            // Console.WriteLine(i.ToString());
-            // Console.WriteLine(f.ToString());
-            // Console.WriteLine(d.ToString());
-            // Console.WriteLine(b.ToString());
-            // Console.ReadKey();
+//            // Console.WriteLine(i.ToString());
+//            // Console.WriteLine(f.ToString());
+//            // Console.WriteLine(d.ToString());
+//            // Console.WriteLine(b.ToString());
+//            // Console.ReadKey();
 
-            //int num1, num2,num3;
-            //Console.WriteLine("Enter 1st number");
-            //num1 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Enter 2nd number");
-            //num2 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Enter 1st number");
-            //num3 = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("Adding three Numbers = " + Convert.ToInt32(num1 + num2 + num3));
+//            //int num1, num2,num3;
+//            //Console.WriteLine("Enter 1st number");
+//            //num1 = Convert.ToInt32(Console.ReadLine());
+//            //Console.WriteLine("Enter 2nd number");
+//            //num2 = Convert.ToInt32(Console.ReadLine());
+//            //Console.WriteLine("Enter 1st number");
+//            //num3 = Convert.ToInt32(Console.ReadLine());
+//            //Console.WriteLine("Adding three Numbers = " + Convert.ToInt32(num1 + num2 + num3));
 
-            //employee e = new employee();
-            //string empname;
-            //Console.WriteLine("Enter name of Employee");
-            //empname = Convert.ToString(Console.ReadLine());
-            //e.getEmp(empname);
-            //e.printDept();
+//            employee e = new employee();
+//            string empname;
+//            Console.WriteLine("Enter name of Employee");
+//            empname = Convert.ToString(Console.ReadLine());
+//            e.getEmp(empname);
+//            e.printDept();
 
-            Console.WriteLine("Atman Shastri, 182");
-            Console.WriteLine("International Connection");
-            international i = new international();
-            i.getRate();
-            i.calculate(3);
 
-            Console.WriteLine("Domestic Connection");
-            domestic d = new domestic();
-            d.getRate();
-            d.calculate(3);
+//            international i = new international();
+//            domestic d = new domestic();
+           
+//            Console.WriteLine("Atman Shastri, 182");
+//            Console.WriteLine("Enter number of seats: ");
+//            int internationalSeats = Convert.ToInt32(Console.ReadLine());
+//            i.getRate();
+//            d.getRate();
+//            i.calculate(internationalSeats);
+//            d.calculate(internationalSeats);
 
-        }
-    }
-}
+//        }
+//    }
+//}

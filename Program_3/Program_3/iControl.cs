@@ -8,11 +8,12 @@ namespace Program_3
 {
     public interface iControl
     {
-        public int height
+        int Height
         {
-            get; set;       
+            get; set;
         }
-        public int width { get; set; }
-
+        int Width { 
+            get; set; 
+        }
     }
 }
