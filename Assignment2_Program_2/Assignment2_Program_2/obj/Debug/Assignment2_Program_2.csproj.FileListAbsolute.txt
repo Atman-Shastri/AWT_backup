@@ -1,0 +1,11 @@
+E:\182\Assignment2_Program_2\Assignment2_Program_2\bin\Debug\Assignment2_Program_2.exe.config
+E:\182\Assignment2_Program_2\Assignment2_Program_2\bin\Debug\Assignment2_Program_2.exe
+E:\182\Assignment2_Program_2\Assignment2_Program_2\bin\Debug\Assignment2_Program_2.pdb
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.csproj.AssemblyReference.cache
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.csproj.SuggestedBindingRedirects.cache
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.Form1.resources
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.Properties.Resources.resources
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.csproj.GenerateResource.cache
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.csproj.CoreCompileInputs.cache
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.exe
+E:\182\Assignment2_Program_2\Assignment2_Program_2\obj\Debug\Assignment2_Program_2.pdb
