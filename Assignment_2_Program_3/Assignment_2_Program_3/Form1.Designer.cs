@@ -45,6 +45,7 @@
             this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label2
             // 
@@ -55,6 +56,7 @@
             this.label2.Size = new System.Drawing.Size(98, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
