@@ -16,5 +16,10 @@ namespace Assignment2_Program_2
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
