@@ -22,7 +22,17 @@ namespace Assignment_2_Program_1
             operation op = new operation();
             float result;
             result = op.calculate(float.Parse(textBox1.Text),float.Parse(textBox2.Text),float.Parse(textBox3.Text));
-            
+            label4.Text = result.ToString(); 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
