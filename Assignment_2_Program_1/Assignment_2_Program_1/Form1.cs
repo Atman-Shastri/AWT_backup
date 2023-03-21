@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Assignment_2_Program_1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            operation op = new operation();
+            float result;
+            result = op.calculate(float.Parse(textBox1.Text),float.Parse(textBox2.Text),float.Parse(textBox3.Text));
+            
+        }
+    }
+}
