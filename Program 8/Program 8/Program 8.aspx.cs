@@ -43,8 +43,7 @@ namespace Program_8
             Label4.Text = "Thank You Very Much for Ordering " + name +
                 "<br> You have chosen to eat " + order +
                 " as your breakfast " +
-                "<br> I will prepare it for you " +
-                time + ".";
+                "<br> I will prepare it for you ";
         }
     }
 }

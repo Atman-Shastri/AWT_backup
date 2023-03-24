@@ -19,9 +19,9 @@
         <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="X-Large" Text="What would you like to eat?"></asp:Label>
         <br />
         <br />
-        <asp:CheckBox ID="CheckBox1" runat="server" Font-Size="Large" Text="Idli" />
+        <asp:CheckBox ID="CheckBox1" runat="server" Font-Size="Large" Text="Idli " />
         <br />
-        <asp:CheckBox ID="CheckBox2" runat="server" Font-Size="Large" Text="Poha" />
+        <asp:CheckBox ID="CheckBox2" runat="server" Font-Size="Large" Text="Poha " />
         <br />
         <asp:CheckBox ID="CheckBox3" runat="server" Font-Size="Large" Text="Dosa" />
         <br />
@@ -39,7 +39,7 @@
         <br />
         <br />
         <br />
-        <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Label"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Size="X-Large" EnableViewState="False"></asp:Label>
         <br />
         <br />
         <br />
