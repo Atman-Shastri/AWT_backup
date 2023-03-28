@@ -72,8 +72,9 @@
     <Content Include="image1\3.jpg" />
     <Content Include="image1\4.jpg" />
     <Content Include="image1\5.jpg" />
-    <Content Include="image1\adxml.xml" />
+    <Content Include="adxml.xml" />
     <Content Include="Program 11.aspx" />
+    <Content Include="Program 12.aspx" />
     <Content Include="Program10.aspx" />
     <Content Include="Program_9.aspx" />
     <Content Include="Web.config" />
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="Program 11.aspx.designer.cs">
       <DependentUpon>Program 11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 12.aspx.cs">
+      <DependentUpon>Program 12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 12.aspx.designer.cs">
+      <DependentUpon>Program 12.aspx</DependentUpon>
     </Compile>
     <Compile Include="Program10.aspx.cs">
       <DependentUpon>Program10.aspx</DependentUpon>

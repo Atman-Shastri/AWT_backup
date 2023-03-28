@@ -13,5 +13,10 @@ namespace Program_9
         {
 
         }
+
+        protected void AdRotator1_AdCreated(object sender, AdCreatedEventArgs e)
+        {
+
+        }
     }
 }
