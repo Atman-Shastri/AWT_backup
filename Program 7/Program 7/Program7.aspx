@@ -27,7 +27,7 @@
         <p>
             &nbsp;</p>
         <p>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White"></asp:Label>
         </p>
     </form>
 </body>

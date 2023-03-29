@@ -21,15 +21,15 @@ namespace Program_8
             name= TextBox1.Text;
             if (CheckBox1.Checked)
             {
-                order += CheckBox1.Text;
+                order += CheckBox1.Text + ",";
             }
             if (CheckBox2.Checked)
             {
-                order += CheckBox2.Text;
+                order += " " + CheckBox2.Text + " ";
             }
             if (CheckBox3.Checked)
             {
-                order += CheckBox3.Text;
+                order += "& " + CheckBox3.Text;
             }
             if(RadioButton1.Checked)
             {
@@ -40,11 +40,12 @@ namespace Program_8
                 time = RadioButton2.Text;
             }
 
-            Label4.Text = "Thank You Very Much for Ordering " + name +
+            Label4.Text = "Thank You Very Much for Ordering " + name + "." +
                 "<br> You have chosen to eat " + order +
-                " as your breakfast " +
+                " as your breakfast." +
                 "<br> I will prepare it for you " +
                 time + ".";
+            Label4.Visible = true;
         }
     }
 }

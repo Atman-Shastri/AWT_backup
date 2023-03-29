@@ -8,7 +8,7 @@ namespace windows_program4
 {
     internal class Operation
     {
-        public float cal(float p,float r,float n)
+        public float calculate(float p,float r,float n)
         {
             return ((p * r * n)) / 100;
         }
