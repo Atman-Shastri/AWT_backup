@@ -42,13 +42,13 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.TextBox FullName;
 
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// NameValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameValidator;
 
         /// <summary>
         /// Label2 control.
@@ -69,13 +69,13 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.TextBox Address;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// AddressValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AddressValidator;
 
         /// <summary>
         /// Label3 control.
@@ -96,13 +96,13 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.DropDownList State;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// StateValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator StateValidator;
 
         /// <summary>
         /// Label5 control.
@@ -123,13 +123,22 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.TextBox MobileNumber;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// NumberValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NumberValidator;
+
+        /// <summary>
+        /// NumberRangeValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator NumberRangeValidator;
 
         /// <summary>
         /// Label6 control.
@@ -141,22 +150,31 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// Calendar1 control.
+        /// DOB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox DOB;
 
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// DOBValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DOBValidator;
+
+        /// <summary>
+        /// Calendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar;
 
         /// <summary>
         /// Label7 control.
@@ -177,22 +195,22 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.TextBox Email;
 
         /// <summary>
-        /// RequiredFieldValidator6 control.
+        /// EmailValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmailValidator;
 
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// RegexEmailValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegexEmailValidator;
 
         /// <summary>
         /// Label8 control.
@@ -213,13 +231,22 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.TextBox Password;
 
         /// <summary>
-        /// RequiredFieldValidator7 control.
+        /// PasswordValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordValidator;
+
+        /// <summary>
+        /// PasswordLengthValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator PasswordLengthValidator;
 
         /// <summary>
         /// Label9 control.
@@ -240,13 +267,22 @@ namespace Program_14
         protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
 
         /// <summary>
-        /// RequiredFieldValidator8 control.
+        /// ConfirmPassValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ConfirmPassValidator;
+
+        /// <summary>
+        /// ComparePasswordValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator ComparePasswordValidator;
 
         /// <summary>
         /// Button1 control.
@@ -265,5 +301,23 @@ namespace Program_14
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+
+        /// <summary>
+        /// Label10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label10;
     }
 }
