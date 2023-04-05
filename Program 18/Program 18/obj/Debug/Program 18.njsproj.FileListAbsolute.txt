@@ -1,0 +1,3 @@
+E:\182\Program 18\Program 18\obj\Debug\Program 18.njsproj.AssemblyReference.cache
+E:\182\Program 18\Program 18\obj\Debug\Program 18.njsproj.CoreCompileInputs.cache
+E:\182\Program 18\Program 18\bin\Microsoft.NodejsTools.WebRole.dll

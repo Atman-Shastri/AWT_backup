@@ -68,8 +68,8 @@ namespace Program_14
 
         protected void Calendar_SelectionChanged(object sender, EventArgs e)
         {
-            DOB.Text = Calendar.SelectedDate.ToLongDateString();
-            Calendar.Visible = false;
+            //DOB.Text = Calendar.SelectedDate.ToLongDateString();
+            //Calendar.Visible = false;
         }
     }
 }

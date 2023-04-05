@@ -45,10 +45,9 @@
             <br />
             <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Large" Text="Select DOB :"></asp:Label>
             &nbsp;&nbsp;
-            <asp:TextBox ID="DOB" runat="server"></asp:TextBox>
+            <asp:TextBox ID="DOB" runat="server" TextMode="Date"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:RequiredFieldValidator ID="DOBValidator" runat="server" ErrorMessage="DOB cannot be empty" ForeColor="Red" ControlToValidate="DOB" ValidationGroup="Registration"></asp:RequiredFieldValidator>
-            <asp:Calendar ID="Calendar" runat="server" Height="194px" Width="283px" OnSelectionChanged="Calendar_SelectionChanged"></asp:Calendar>
             &nbsp;<br />
             <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="choose a birth date" ForeColor="Red"></asp:RequiredFieldValidator>--%>
             <br />
@@ -76,15 +75,15 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Height="30px" Text="Register" Width="86px" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Height="30px" Text="Register" Width="86px" OnClick="Button1_Click" ValidationGroup="Registration" />
 &nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Height="30px" Text="Cancel" Width="86px" OnClick="Button2_Click" />
             <br />
             <br />
-            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="Registration" />
             <br />
             <br />
-            <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label10" runat="server"></asp:Label>
             <br />
         </div>
     </form>
