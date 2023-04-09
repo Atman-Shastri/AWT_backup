@@ -16,27 +16,17 @@ namespace Program_14
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if(NameValidator.IsValid==true &&
-               AddressValidator.IsValid==true &&
-               StateValidator.IsValid==true &&
-               NumberValidator.IsValid==true &&
-               NumberRangeValidator.IsValid==true &&
-               DOBValidator.IsValid == true &&
-               EmailValidator.IsValid == true &&
-               RegexEmailValidator.IsValid ==true &&
-               PasswordValidator.IsValid == true &&
-               ConfirmPassValidator.IsValid == true &&
-               ComparePasswordValidator.IsValid == true &&
-               PasswordLengthValidator.IsValid == true
-                )
+            if (Page.IsValid)
             {
                 Label10.ForeColor = System.Drawing.Color.Green;
                 Label10.Text = "Data Registered successfully";
+                Label10.Visible = true;
             }
             else
             {
                 Label10.ForeColor = System.Drawing.Color.Red;
                 Label10.Text = "Please follow all Validation Rules";
+                Label10.Visible = true;
             }
         }
 
@@ -46,6 +36,10 @@ namespace Program_14
             if (len >= 8 && len <= 15)
             {
                 args.IsValid = true;
+            }
+            else if (len == 0)
+            {
+                args.IsValid = false;
             }
             else
             {
@@ -58,18 +52,13 @@ namespace Program_14
         {
             FullName.Text = string.Empty;
             Address.Text = string.Empty;
-            State.Text = string.Empty;
             MobileNumber.Text = string.Empty;
             DOB.Text = string.Empty;
             Email.Text = string.Empty;
+            State.DataValueField = string.Empty;
             Password.Text = string.Empty;
             ConfirmPassword.Text = string.Empty;
         }
 
-        protected void Calendar_SelectionChanged(object sender, EventArgs e)
-        {
-            DOB.Text = Calendar.SelectedDate.ToLongDateString();
-            Calendar.Visible = false;
-        }
     }
 }
