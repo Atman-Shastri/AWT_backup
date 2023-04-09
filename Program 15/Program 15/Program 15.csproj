@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2A0439FD-82F7-41FF-AE84-8B847C9B45F1}</ProjectGuid>
+    <ProjectGuid>{56CD4A4A-895B-41E1-84AA-12D5C0B3D47A}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44380</IISExpressSSLPort>
+    <IISExpressSSLPort>44336</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,36 +67,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Page 1.aspx" />
-    <Content Include="Page 2.aspx" />
-    <Content Include="Page 3.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default2.aspx" />
+    <Content Include="Default3.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Page 1.aspx.cs">
-      <DependentUpon>Page 1.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Page 1.aspx.designer.cs">
-      <DependentUpon>Page 1.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page 2.aspx.cs">
-      <DependentUpon>Page 2.aspx</DependentUpon>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Page 2.aspx.designer.cs">
-      <DependentUpon>Page 2.aspx</DependentUpon>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page 3.aspx.cs">
-      <DependentUpon>Page 3.aspx</DependentUpon>
+    <Compile Include="Default3.aspx.cs">
+      <DependentUpon>Default3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Page 3.aspx.designer.cs">
-      <DependentUpon>Page 3.aspx</DependentUpon>
+    <Compile Include="Default3.aspx.designer.cs">
+      <DependentUpon>Default3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -119,9 +127,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>57435</DevelopmentServerPort>
+          <DevelopmentServerPort>51386</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44380/</IISUrl>
+          <IISUrl>https://localhost:44336/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

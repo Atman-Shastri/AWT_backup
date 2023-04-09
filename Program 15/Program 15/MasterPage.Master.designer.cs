@@ -7,12 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Program_13
+namespace Program_15
 {
 
 
-    public partial class WebForm1
+    public partial class MasterPage
     {
+
+        /// <summary>
+        /// head control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
         /// form1 control.
@@ -24,6 +33,15 @@ namespace Program_13
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// ContentPlaceHolder1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -33,12 +51,12 @@ namespace Program_13
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Calendar1 control.
+        /// SiteMapPath1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.SiteMapPath SiteMapPath1;
     }
 }

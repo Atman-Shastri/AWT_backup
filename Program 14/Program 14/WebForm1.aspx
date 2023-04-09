@@ -77,19 +77,17 @@
             <br />
            
             <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="Large" Text="Select DOB :"></asp:Label>
-<<<<<<< HEAD
+
             
             <asp:TextBox ID="DOB" runat="server" TextMode="Date" CssClass="form__input" Placeholder="Date of Birth"></asp:TextBox>
             
             <asp:RequiredFieldValidator ID="DOBValidator" runat="server" ErrorMessage="DOB cannot be empty" ForeColor="Red" ControlToValidate="DOB" ValidationGroup="Registration" Font-Size="X-Large">*</asp:RequiredFieldValidator>
-=======
+
             &nbsp;&nbsp;
-            <asp:TextBox ID="DOB" runat="server" TextMode="Date"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:RequiredFieldValidator ID="DOBValidator" runat="server" ErrorMessage="DOB cannot be empty" ForeColor="Red" ControlToValidate="DOB" ValidationGroup="Registration"></asp:RequiredFieldValidator>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;<br />
             <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="choose a birth date" ForeColor="Red"></asp:RequiredFieldValidator>--%>
->>>>>>> c6de3607a223f239fd39fad7a1ef1235f86b04d6
+
             <br />
             
             <asp:Label ID="Label7" runat="server" Font-Bold="True" Font-Size="Large" Text="Email :"></asp:Label>
@@ -130,21 +128,8 @@
 
             <asp:Button ID="Button2" runat="server" Height="51px" Text="Cancel" Width="122px" OnClick="Button2_Click" CssClass="btn" />
             <br />
-<<<<<<< HEAD
             
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="Registration" />
-=======
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Height="30px" Text="Register" Width="86px" OnClick="Button1_Click" ValidationGroup="Registration" />
-&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" Height="30px" Text="Cancel" Width="86px" OnClick="Button2_Click" />
-            <br />
-            <br />
-            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="Registration" />
-            <br />
-            <br />
-            <asp:Label ID="Label10" runat="server"></asp:Label>
->>>>>>> c6de3607a223f239fd39fad7a1ef1235f86b04d6
             <br />
             
             

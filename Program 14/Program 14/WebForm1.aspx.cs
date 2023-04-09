@@ -60,13 +60,5 @@ namespace Program_14
             ConfirmPassword.Text = string.Empty;
         }
 
-<<<<<<< HEAD
-=======
-        protected void Calendar_SelectionChanged(object sender, EventArgs e)
-        {
-            //DOB.Text = Calendar.SelectedDate.ToLongDateString();
-            //Calendar.Visible = false;
-        }
->>>>>>> c6de3607a223f239fd39fad7a1ef1235f86b04d6
     }
 }
