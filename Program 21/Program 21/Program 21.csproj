@@ -71,6 +71,7 @@
     <Content Include="App_Data\EMPLOYEE_log.ldf">
       <DependentUpon>EMPLOYEE.mdf</DependentUpon>
     </Content>
+    <Content Include="SampleStyleSheet.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
