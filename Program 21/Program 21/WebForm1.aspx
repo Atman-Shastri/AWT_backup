@@ -89,7 +89,7 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Save" Width="132px" />
+            <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Save" Width="132px" OnClick="Button1_Click" />
             <br />
 &nbsp;<asp:GridView ID="GridView2" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="230px">
                 <FooterStyle BackColor="#CCCCCC" />

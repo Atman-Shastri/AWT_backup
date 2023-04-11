@@ -74,5 +74,21 @@ namespace Program_21
             }
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from emp  where Id=" +
+            int.Parse(DropDownList1.SelectedValue.ToString()), con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                TextBox5.Text = dr[0].ToString();
+                TextBox6.Text = dr[1].ToString();
+            }
+            dr.Close();
+            con.Close();
+
+        }
     }
 }
