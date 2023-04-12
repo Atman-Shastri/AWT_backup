@@ -129,5 +129,34 @@ namespace Program_21
             DropDownList1.DataBind();
             con.Close();
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\WebApplication8\\WebApplication8\\App_Data\\EMPLOYEE1.mdf;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "insert into emp(name) " +
+                "values(" + "'" + TextBox2.Text + "')";
+            cmd.Connection = con;
+            int result = cmd.ExecuteNonQuery();
+            if (result > 0)
+            {
+                Response.Write("data inserted succesfully");
+                SqlCommand cmd1 = new SqlCommand(
+                    "select * from emp", con);
+                SqlDataReader dr = cmd1.ExecuteReader();
+                GridView1.DataSource = dr;
+                GridView1.DataBind();
+
+
+            }
+            else
+            {
+                Response.Write("Try Again");
+            }
+            con.Close();
+
+
+        }
     }
 }

@@ -92,7 +92,9 @@
             <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Update" Width="132px" OnClick="Button1_Click" />
             &nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Delete" Width="132px" OnClick="Button2_Click" />
-            &nbsp;<br />
+            &nbsp;&nbsp;
+            <asp:Button ID="Button3" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Insert" Width="132px" OnClick="Button3_Click" />
+            <br />
  <asp:GridView ID="GridView2" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="230px">
                 <FooterStyle BackColor="#CCCCCC" />
                 <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
