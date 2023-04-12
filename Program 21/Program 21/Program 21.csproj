@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\EMPLOYEE.mdf" />
+    <Content Include="App_Data\EMPLOYEE1.mdf" />
+    <Content Include="App_Data\EMPLOYEE1_log.ldf">
+      <DependentUpon>EMPLOYEE1.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\EMPLOYEE_log.ldf">
       <DependentUpon>EMPLOYEE.mdf</DependentUpon>
     </Content>
