@@ -1,6 +1,6 @@
 ﻿<%--Select Operation--%>
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Program_21.WebForm1" %>
+<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Program_21.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -50,29 +50,30 @@
         </div>
     </form>
 </body>
-</html>
+</html>--%>
 
 <%--Update & Delete Operations--%>
 
-<%--<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Program_21.WebForm1" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Program_21.WebForm1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+     <%--<link rel="stylesheet" href="SampleStyleSheet.css" />--%>
 </head>
 <body>
     <form id="form2" runat="server">
-        <div>
+        <div class="container">
                                                                                            
             <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Atman Shastri, 182"></asp:Label>
             <br />
             <br />
-                  
+                <div class="container2">  
             <asp:Label ID="Label6" runat="server" Font-Bold="True" Font-Size="X-Large" Text="ID :"></asp:Label>
    
-            <asp:DropDownList ID="DropDownList1" runat="server" Height="26px" Width="143px">
+            <asp:DropDownList ID="DropDownList1" runat="server" Height="26px" Width="143px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
             </asp:DropDownList>
             <br />
             <br />
@@ -87,8 +88,12 @@
  <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="151px"></asp:TextBox>
             <br />
             <br />
-                      
-            <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Save" Width="132px" OnClick="Button1_Click" />
+                      </div>
+            <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Update" Width="132px" OnClick="Button1_Click" />
+            &nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Delete" Width="132px" OnClick="Button2_Click" />
+            &nbsp;&nbsp;
+            <asp:Button ID="Button3" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Insert" Width="132px" OnClick="Button3_Click" />
             <br />
  <asp:GridView ID="GridView2" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="230px">
                 <FooterStyle BackColor="#CCCCCC" />
@@ -108,4 +113,4 @@
         </div>
     </form>
 </body>
-</html>--%>
+</html>
