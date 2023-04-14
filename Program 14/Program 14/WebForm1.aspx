@@ -129,7 +129,7 @@
             <asp:Button ID="Button2" runat="server" Height="51px" Text="Cancel" Width="122px" OnClick="Button2_Click" CssClass="btn" />
             <br />
             
-            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="Registration" />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="Registration" ShowMessageBox="True" />
             <br />
             
             
