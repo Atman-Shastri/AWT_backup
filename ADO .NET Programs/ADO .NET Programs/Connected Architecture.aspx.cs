@@ -28,6 +28,7 @@ namespace ADO.NET_Programs
         {
             if (!Page.IsPostBack)
             {
+                
                 con.Open();
                 SqlCommand cmd4 = new SqlCommand("select * from emp", con);
                 SqlDataReader reader1 = cmd4.ExecuteReader();
@@ -66,12 +67,7 @@ namespace ADO.NET_Programs
         protected void View_Button_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd3 = new SqlCommand("select * from emp",con);
-            GridView1.DataSource = cmd3.ExecuteReader();
-            GridView1.DataBind();
-            Message_Label.Text = "Viewing Employee Table";
-            Message_Label.Visible = true;
-            con.Close();
+            viewing();
         }
         protected void ID_dropdown_list_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -114,6 +110,25 @@ namespace ADO.NET_Programs
             }
             con.Close();
             
+        }
+
+        protected void Delete_Button_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd8 = new SqlCommand("delete from emp where Id=" + int.Parse(ID_dropdown_list.SelectedValue.ToString()),con);
+            Name_TextBox.Text = "";
+            Salary_TextBox.Text = "";
+            Date_TextBox.Text = "";
+            Contact_TextBox.Text = "";
+            int result = cmd8.ExecuteNonQuery();
+            if(result > 0) {
+                Console.WriteLine("Deleted Successfully");
+                viewing();
+            }
+            else
+            {
+                Message_Label.Text = "Try Again";
+            }
         }
     }
 }

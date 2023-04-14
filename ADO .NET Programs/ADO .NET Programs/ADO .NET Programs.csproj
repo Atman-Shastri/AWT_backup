@@ -71,11 +71,19 @@
     <Content Include="App_Data\Employee_log.ldf">
       <DependentUpon>Employee.mdf</DependentUpon>
     </Content>
+    <Content Include="Disconnected Architecture.aspx" />
     <Content Include="Connected Architecture.aspx" />
     <Content Include="SampleStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Disconnected Architecture.aspx.cs">
+      <DependentUpon>Disconnected Architecture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disconnected Architecture.aspx.designer.cs">
+      <DependentUpon>Disconnected Architecture.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Architecture.aspx.cs">
       <DependentUpon>Connected Architecture.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

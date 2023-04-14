@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="SampleStyleSheet.css" />
 </head>
 <body>
+    
      <form id="form1" runat="server">
         <div class="container">
             <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Atman Shastri, 182"></asp:Label>
@@ -42,15 +43,18 @@
             &nbsp;&nbsp;
             <asp:Button ID="Update_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Update" Width="132px" ValidationGroup="Registration" OnClick="Update_Button_Click" />
             &nbsp;&nbsp;
-            <asp:Button ID="Delete_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Delete" Width="132px" />
+            <asp:Button ID="Delete_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Delete" Width="132px" OnClick="Delete_Button_Click" />
             &nbsp;&nbsp;
             <br />
             <br />
             <br />
+           
+            
+            <div id="gridview-container">
             <asp:Label ID="Message_Label" runat="server" Font-Bold="True" Font-Size="XX-Large" Visible="False"></asp:Label>
-            <br />
-            <br />
-            <asp:GridView ID="GridView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="446px">
+                <br />
+                  <br />
+                <asp:GridView ID="GridView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="446px">
                 <FooterStyle BackColor="#CCCCCC" />
                 <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
@@ -61,7 +65,9 @@
                 <SortedDescendingCellStyle BackColor="#CAC9C9" />
                 <SortedDescendingHeaderStyle BackColor="#383838" />
             </asp:GridView>
+                </div>
         </div>
     </form>
 </body>
+      
 </html>
