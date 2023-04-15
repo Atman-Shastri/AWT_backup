@@ -69,60 +69,6 @@ namespace ADO.NET_Programs
         protected global::System.Web.UI.WebControls.TextBox Name_TextBox;
 
         /// <summary>
-        /// Salary_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Salary_Label;
-
-        /// <summary>
-        /// Salary_TextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Salary_TextBox;
-
-        /// <summary>
-        /// Date_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Date_Label;
-
-        /// <summary>
-        /// Date_TextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Date_TextBox;
-
-        /// <summary>
-        /// Contact_Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Contact_Label;
-
-        /// <summary>
-        /// Contact_TextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Contact_TextBox;
-
-        /// <summary>
         /// View_Button control.
         /// </summary>
         /// <remarks>
