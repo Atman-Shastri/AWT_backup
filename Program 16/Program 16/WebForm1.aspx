@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="info">
-          <h1> Atman Shastri,182 </h1>
+          <h1> Atman Shastri,100 </h1>
         <p class="short-info">#Get Your 14 Days Free Trial</p>
         <h2 class="hero-heading">Manage All Of Your Stuff Using A TGB</h2>
         <p class="hero-sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tincidunt eifend odio viverra diam aliquet donec again.</p>

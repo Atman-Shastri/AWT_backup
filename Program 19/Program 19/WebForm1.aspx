@@ -1,4 +1,4 @@
-﻿<%--<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <title>Color Effects using jQuery</title>
@@ -28,13 +28,13 @@
   </head>
   <body>
     <h1>Atman Shastri</h1>
-    <p class="clickable">182</p>
+    <p class="clickable">100</p>
     <h2>Program 19</h2>
     <p class="clickable">JQuery</p>
   </body>
-</html>--%>
+</html>
 
-<!DOCTYPE html>
+<%--<!DOCTYPE html>
 <html>
 <head>
 	<title>Atman Shastri</title>
@@ -98,8 +98,8 @@
 <body>
 	<div id="box"></div>
 	<h1>Atman Shastri</h1>
-	<h2>Roll Number: 182</h2>
-	<p>This is a website</p>
+	<h2>Roll Number: 100</h2>
+	<p>Welcome to my humble abode!</p>
 	
 </body>
-</html>
+</html>--%>

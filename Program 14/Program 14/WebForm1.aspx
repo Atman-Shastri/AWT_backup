@@ -33,7 +33,7 @@
             <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="Large" Text="Select State :"></asp:Label>
 
             <asp:DropDownList ID="State" runat="server" Height="36px" Width="394px" Placeholder="State" CssClass="form">
-                <asp:ListItem Selected="True">Select a country</asp:ListItem>
+                <asp:ListItem Selected="True">Select a state</asp:ListItem>
                 <asp:ListItem>Maharashtra</asp:ListItem>
                 <asp:ListItem>Andhra Pradesh</asp:ListItem>
                 <asp:ListItem>Arunachal Pradesh</asp:ListItem>

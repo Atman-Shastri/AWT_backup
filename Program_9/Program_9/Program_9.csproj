@@ -73,6 +73,9 @@
     <Content Include="image1\4.jpg" />
     <Content Include="image1\5.jpg" />
     <Content Include="adxml.xml" />
+    <Content Include="image1\rdp.jpg" />
+    <Content Include="image1\ssh.png" />
+    <Content Include="image1\vnc.png" />
     <Content Include="Program 11.aspx" />
     <Content Include="Program 12.aspx" />
     <Content Include="Program10.aspx" />
