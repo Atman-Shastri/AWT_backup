@@ -39,25 +39,19 @@ namespace ADO.NET_Programs
             }
             
         }
-       /* protected void Grid_Bind()
-        {
-            SqlDataAdapter da = new SqlDataAdapter("select * from emp1", con);
-            da.Fill(dsemp, "emp1");
-            GridView1.DataSource = dsemp.Tables[0];
-            GridView1.DataBind();
-           
-            Message_Label.Text = "Viewing Employee Table";
-            Message_Label.Visible = true;
-            con.Close();
-        }*/
         protected void Insert_Click(object sender, EventArgs e)
         {
+            string[] dateParts = Date_TextBox.Text.Split('-');
+            string formattedDate = dateParts[2] + '-' + dateParts[1] + "-" + dateParts[0];
             da = new SqlDataAdapter("select * from emp", con);
             cb = new SqlCommandBuilder(da);
             dsemp = new DataSet();
             da.Fill(dsemp, "emp");
             DataRow dr = dsemp.Tables[0].NewRow();
-            dr["name"] = Name_TextBox.Text;
+            dr["Name"] = Name_TextBox.Text;
+            dr["Salary"] = Salary_TextBox.Text;
+            dr["Date of Birth"] = formattedDate;
+            dr["Contact"] = Contact_TextBox.Text;
             dsemp.Tables[0].Rows.Add(dr);
             da.Update(dsemp.Tables["emp"]);
             ID_dropdown_list.DataSource = dsemp.Tables[0];
@@ -91,7 +85,11 @@ namespace ADO.NET_Programs
             {
                 if (dr["Id"].ToString() == ID_dropdown_list.SelectedValue.ToString())
                 {
-                    Name_TextBox.Text = dr["name"].ToString();
+                    Name_TextBox.Text = dr["Name"].ToString();
+                    Salary_TextBox.Text = dr["Salary"].ToString();
+                    Date_TextBox.Text = dr["Date of Birth"].ToString();
+                    Contact_TextBox.Text = dr["Contact"].ToString();
+
                 }
 
             }
@@ -99,7 +97,9 @@ namespace ADO.NET_Programs
         }
 
             protected void Update_Button_Click(object sender, EventArgs e)
-        {   
+        {
+            string[] dateParts = Date_TextBox.Text.Split('-');
+            string formattedDate = dateParts[2] + '-' + dateParts[1] + "-" + dateParts[0];
                 da = new SqlDataAdapter("select * from emp", con);
                 cb = new SqlCommandBuilder(da);
                 dsemp = new DataSet();
@@ -110,6 +110,9 @@ namespace ADO.NET_Programs
                 {
 
                     dr["name"] = Name_TextBox.Text;
+                    dr["Salary"] = Salary_TextBox.Text;
+                    dr["Date of Birth"] = formattedDate;
+                    dr["Contact"] = Contact_TextBox.Text;
                 }
             }
 
