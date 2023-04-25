@@ -1,0 +1,136 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #555;
+}
+
+#ID_dropdown_list {
+    height: 26px;
+    width: 143px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+input[type="submit"], button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    input[type="submit"]:hover, button:hover {
+        background-color: #d32f2f;
+    }
+
+/* Header styles */
+
+.container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    text-shadow: 1px 1px #fff;
+}
+
+/* Form styles */
+
+.form-group {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+    .form-group label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        color: #aaa;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:valid + label {
+        top: -30px;
+        left: 0;
+        font-size: 12px;
+        color: #f44336;
+    }
+
+    .form-group input:focus,
+    .form-group input:valid {
+        border-color: #f44336;
+    }
+
+/* Gridview styles */
+
+.gridview {
+    margin-top: 50px;
+}
+
+    .gridview th, .gridview td {
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+    }
+
+    .gridview th {
+        background-color: #444;
+        color: #fff;
+    }
+
+    .gridview tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], select {
+        font-size: 14px;
+    }
+
+    .gridview th, .gridview td {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .gridview th {
+        font-size: 16px;
+    }
+
+    #gridview-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
