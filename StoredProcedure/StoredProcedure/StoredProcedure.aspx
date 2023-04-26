@@ -23,21 +23,21 @@
                 <asp:TextBox ID="Name_TextBox" runat="server" Height="20px" Width="151px"></asp:TextBox>
                 <br />
                 <br />
-               <%-- <asp:Label ID="Salary_Label" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Salary :"></asp:Label>
-                <asp:TextBox ID="Salary_TextBox" runat="server" Height="20px" Width="151px"></asp:TextBox>--%>
-               <%-- <br />
+                <asp:Label ID="Salary_Label" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Salary :"></asp:Label>
+                <asp:TextBox ID="Salary_TextBox" runat="server" Height="20px" Width="151px"></asp:TextBox>
+                <br />
                 <br />
                 <asp:Label ID="Date_Label" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Date of Birth :"></asp:Label>
                 <asp:TextBox ID="Date_TextBox" runat="server" Height="20px" Width="151px" TextMode="Date" AutoPostBack="True"></asp:TextBox>
                 <br />
                 <br />
                 <asp:Label ID="Contact_Label" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Contact :"></asp:Label>
-                <asp:TextBox ID="Contact_TextBox" runat="server" Height="20px" Width="151px"></asp:TextBox>--%>
+                <asp:TextBox ID="Contact_TextBox" runat="server" Height="20px" Width="151px"></asp:TextBox>
             </div>
             <br />
             <br />
-           <%-- <asp:Button ID="View_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="View" Width="132px" OnClick="View_Button_Click" />
-            &nbsp;&nbsp;--%>
+            <asp:Button ID="View_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="View" Width="132px" OnClick="View_Button_Click" />
+            &nbsp;&nbsp;
             <asp:Button ID="Insert_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Insert" Width="132px" ValidationGroup="Registration" OnClick="Insert_Button_Click" />
             &nbsp;&nbsp;
             <asp:Button ID="Update_Button" runat="server" Font-Bold="True" Font-Size="Large" Height="44px" Text="Update" Width="132px" ValidationGroup="Registration" OnClick="Update_Button_Click" />

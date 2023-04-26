@@ -11,7 +11,7 @@ namespace StoredProcedure
     public partial class StoredProcedure : System.Web.UI.Page
     {
         SqlConnection con;
-        string cs = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf;Integrated Security=True";
+        string cs = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf;Integrated Security=True";
 
         public void gridFill()
         {
@@ -128,6 +128,11 @@ namespace StoredProcedure
             }
             con.Close();
 
+        }
+
+        protected void View_Button_Click(object sender, EventArgs e)
+        {
+            gridFill();
         }
     }
 }
