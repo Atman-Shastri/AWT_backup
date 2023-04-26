@@ -72,7 +72,13 @@
       <DependentUpon>Employee.mdf</DependentUpon>
     </Content>
     <Content Include="ProductsList.aspx" />
+    <Content Include="Program 10.aspx" />
+    <Content Include="Program 11.aspx" />
+    <Content Include="Program 12.aspx" />
+    <Content Include="Program 13.aspx" />
+    <Content Include="Program 14.aspx" />
     <Content Include="Program 8.aspx" />
+    <Content Include="Program 9.aspx" />
     <Content Include="Program_8_querystring.aspx" />
     <Content Include="SampleStyleSheet.css" />
     <Content Include="StoredProcedure.aspx" />
@@ -86,12 +92,54 @@
     <Compile Include="ProductsList.aspx.designer.cs">
       <DependentUpon>ProductsList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Program 10.aspx.cs">
+      <DependentUpon>Program 10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 10.aspx.designer.cs">
+      <DependentUpon>Program 10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 11.aspx.cs">
+      <DependentUpon>Program 11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 11.aspx.designer.cs">
+      <DependentUpon>Program 11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 12.aspx.cs">
+      <DependentUpon>Program 12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 12.aspx.designer.cs">
+      <DependentUpon>Program 12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 13.aspx.cs">
+      <DependentUpon>Program 13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 13.aspx.designer.cs">
+      <DependentUpon>Program 13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 14.aspx.cs">
+      <DependentUpon>Program 14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 14.aspx.designer.cs">
+      <DependentUpon>Program 14.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Program 8.aspx.cs">
       <DependentUpon>Program 8.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Program 8.aspx.designer.cs">
       <DependentUpon>Program 8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 9.aspx.cs">
+      <DependentUpon>Program 9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 9.aspx.designer.cs">
+      <DependentUpon>Program 9.aspx</DependentUpon>
     </Compile>
     <Compile Include="Program_8_querystring.aspx.cs">
       <DependentUpon>Program_8_querystring.aspx</DependentUpon>
