@@ -27,7 +27,6 @@ namespace StoredProcedure
                 TextBox txt_name1 = (TextBox)e.Item.FindControl("Textbox3");
 
                 SqlDataSource1.InsertParameters["emp_name"].DefaultValue = txt_name1.Text;
-
                 SqlDataSource1.Insert();
             }
 
