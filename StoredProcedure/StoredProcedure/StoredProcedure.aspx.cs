@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace StoredProcedure
 {
@@ -61,6 +62,8 @@ namespace StoredProcedure
                 while (reader.Read())
                 {
                     Name_TextBox.Text = reader[1].ToString();
+                    Salary_TextBox.Text = reader[2].ToString();
+                    Contact_TextBox.Text = reader[4].ToString();
 
                 }
 
@@ -75,7 +78,10 @@ namespace StoredProcedure
             string txtname = Name_TextBox.Text;
             SqlCommand cmd = new SqlCommand("sp_insertdata", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@name", txtname);
+            cmd.Parameters.AddWithValue("@Name", txtname);
+            cmd.Parameters.AddWithValue ("@Salary", Salary_TextBox.Text);
+            cmd.Parameters.AddWithValue("@dateOfBirth", Date_TextBox.Text);
+            cmd.Parameters.AddWithValue("@Contact", Contact_TextBox.Text);
             con.Open();
             int res = cmd.ExecuteNonQuery();
             if (res != 0)
@@ -113,12 +119,15 @@ namespace StoredProcedure
         {
             SqlConnection con = new SqlConnection(cs);
             con.Open();
+            string txtname = Name_TextBox.Text;
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.CommandText = "sp_updatedata";
             cmd.Parameters.AddWithValue("Id", ID_dropdown_list.SelectedItem.Value);
-            cmd.Parameters.AddWithValue("name", Name_TextBox.Text);
-
+            cmd.Parameters.AddWithValue("@Name", txtname);
+            cmd.Parameters.AddWithValue("@Salary", Salary_TextBox.Text);
+            cmd.Parameters.AddWithValue("@dateOfBirth", Date_TextBox.Text);
+            cmd.Parameters.AddWithValue("@Contact", Contact_TextBox.Text);
             cmd.Connection = con;
             int res = cmd.ExecuteNonQuery();
             if (res != 0)
