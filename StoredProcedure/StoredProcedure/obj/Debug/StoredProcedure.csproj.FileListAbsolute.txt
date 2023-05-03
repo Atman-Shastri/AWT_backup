@@ -116,3 +116,7 @@ F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.csproj.CoreComp
 F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.csproj.CopyComplete
 F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.dll
 F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.pdb
+E:\182\StoredProcedure\StoredProcedure\bin\EntityFramework.dll
+E:\182\StoredProcedure\StoredProcedure\bin\EntityFramework.SqlServer.dll
+E:\182\StoredProcedure\StoredProcedure\bin\EntityFramework.xml
+E:\182\StoredProcedure\StoredProcedure\bin\EntityFramework.SqlServer.xml
