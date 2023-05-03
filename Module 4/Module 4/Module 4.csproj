@@ -71,6 +71,7 @@
     <Content Include="App_Data\student_db_log.ldf">
       <DependentUpon>student_db.mdf</DependentUpon>
     </Content>
+    <Content Include="Global.asax" />
     <Content Include="HiddenObjects.aspx" />
     <Content Include="p3_female.aspx" />
     <Content Include="p3_male.aspx" />
@@ -78,11 +79,17 @@
     <Content Include="Program 2.aspx" />
     <Content Include="Program 3.aspx" />
     <Content Include="Program 4.aspx" />
+    <Content Include="Program 6.aspx" />
+    <Content Include="Program_5.aspx" />
+    <Content Include="Program_5_nextpage.aspx" />
     <Content Include="Q4_Homepage.aspx" />
     <Content Include="Q4_Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="HiddenObjects.aspx.cs">
       <DependentUpon>HiddenObjects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -131,6 +138,27 @@
     </Compile>
     <Compile Include="Program 4.aspx.designer.cs">
       <DependentUpon>Program 4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 6.aspx.cs">
+      <DependentUpon>Program 6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 6.aspx.designer.cs">
+      <DependentUpon>Program 6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program_5.aspx.cs">
+      <DependentUpon>Program_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program_5.aspx.designer.cs">
+      <DependentUpon>Program_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program_5_nextpage.aspx.cs">
+      <DependentUpon>Program_5_nextpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program_5_nextpage.aspx.designer.cs">
+      <DependentUpon>Program_5_nextpage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Q4_Homepage.aspx.cs">
