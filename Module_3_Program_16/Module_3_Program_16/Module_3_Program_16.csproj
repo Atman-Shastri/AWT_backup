@@ -73,6 +73,7 @@
       <DependentUpon>Employee.mdf</DependentUpon>
     </Content>
     <Content Include="Program 16.aspx" />
+    <Content Include="SampleStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
