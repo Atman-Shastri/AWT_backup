@@ -73,13 +73,20 @@
     </Content>
     <Content Include="Global.asax" />
     <Content Include="HiddenObjects.aspx" />
+    <Content Include="images\1.PNG" />
+    <Content Include="images\2.PNG" />
+    <Content Include="images\adiss.png" />
     <Content Include="p3_female.aspx" />
     <Content Include="p3_male.aspx" />
     <Content Include="Program 1.aspx" />
+    <Content Include="Program 10.aspx" />
     <Content Include="Program 2.aspx" />
     <Content Include="Program 3.aspx" />
     <Content Include="Program 4.aspx" />
     <Content Include="Program 6.aspx" />
+    <Content Include="Program 7.aspx" />
+    <Content Include="Program 8.aspx" />
+    <Content Include="Program 9.aspx" />
     <Content Include="Program_5.aspx" />
     <Content Include="Program_5_nextpage.aspx" />
     <Content Include="Q4_Homepage.aspx" />
@@ -118,6 +125,13 @@
     <Compile Include="Program 1.aspx.designer.cs">
       <DependentUpon>Program 1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Program 10.aspx.cs">
+      <DependentUpon>Program 10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 10.aspx.designer.cs">
+      <DependentUpon>Program 10.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Program 2.aspx.cs">
       <DependentUpon>Program 2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,6 +159,27 @@
     </Compile>
     <Compile Include="Program 6.aspx.designer.cs">
       <DependentUpon>Program 6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 7.aspx.cs">
+      <DependentUpon>Program 7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 7.aspx.designer.cs">
+      <DependentUpon>Program 7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 8.aspx.cs">
+      <DependentUpon>Program 8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 8.aspx.designer.cs">
+      <DependentUpon>Program 8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program 9.aspx.cs">
+      <DependentUpon>Program 9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program 9.aspx.designer.cs">
+      <DependentUpon>Program 9.aspx</DependentUpon>
     </Compile>
     <Compile Include="Program_5.aspx.cs">
       <DependentUpon>Program_5.aspx</DependentUpon>
