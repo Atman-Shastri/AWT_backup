@@ -19,17 +19,17 @@ namespace Module_4
         {
             if (i == 0)
             {
-                Image1.ImageUrl = "~/images/1.png";
+                Image1.ImageUrl = "~/images/1.jpg";
                 i = 1;
             }
             else if (i == 1)
             {
-                Image1.ImageUrl = "~/images/adiss.png";
+                Image1.ImageUrl = "~/images/2.jpg";
                 i = 2;
             }
             else
             {
-                Image1.ImageUrl = "~/images/2.png";
+                Image1.ImageUrl = "~/images/3.jpg";
                 i = 0;
             }
         }

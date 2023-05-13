@@ -10,7 +10,7 @@ namespace Module_4
 {
     public partial class Q4_Register : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\182\Module 4\Module 4\App_Data\student_db.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""F:\182\Module 4\Module 4\App_Data\student_db.mdf"";Integrated Security=True");
 
         protected void Page_Load(object sender, EventArgs e)
         {

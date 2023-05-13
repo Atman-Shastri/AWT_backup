@@ -16,7 +16,7 @@
                     <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="tick"/>
                 </Triggers>
                 <ContentTemplate>
-                    <asp:Image ID="Image1" runat="server" heigth="1000px" Width="400px"/>
+                    <asp:Image ID="Image1" runat="server" Height="238px" Width="485px"/>
                     <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick"></asp:Timer>
             
                 </ContentTemplate>
