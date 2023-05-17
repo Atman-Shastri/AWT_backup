@@ -1,0 +1,7 @@
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\bin\WCF_Module_5_and_6.dll.config
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\bin\WCF_Module_5_and_6.dll
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\bin\WCF_Module_5_and_6.pdb
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.csproj.AssemblyReference.cache
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.csproj.CoreCompileInputs.cache
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.dll
+E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.pdb

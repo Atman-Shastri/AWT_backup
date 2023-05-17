@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="6ebde4a1-040a-417d-a810-0dad6f93e75e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52039/Program_4.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Program_4.wsdl" MetadataType="Wsdl" ID="6ac21c76-50b9-413c-a768-4c2ff8a8702b" SourceId="1" SourceUrl="http://localhost:52039/Program_4.svc?wsdl" />
+    <MetadataFile FileName="Program_4.xsd" MetadataType="Schema" ID="d3e63605-83b6-4576-ad54-c04b3e1ba613" SourceId="1" SourceUrl="http://localhost:52039/Program_4.svc?xsd=xsd0" />
+    <MetadataFile FileName="Program_4.disco" MetadataType="Disco" ID="4c2a000f-3432-4c35-ab23-33e07293dda6" SourceId="1" SourceUrl="http://localhost:52039/Program_4.svc?disco" />
+    <MetadataFile FileName="Program_41.xsd" MetadataType="Schema" ID="9761483d-8e8d-4bdd-a75a-4d544f83da23" SourceId="1" SourceUrl="http://localhost:52039/Program_4.svc?xsd=xsd2" />
+    <MetadataFile FileName="Program_42.xsd" MetadataType="Schema" ID="d887ca5a-164f-4b60-95f6-4a9d6f1fc25a" SourceId="1" SourceUrl="http://localhost:52039/Program_4.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

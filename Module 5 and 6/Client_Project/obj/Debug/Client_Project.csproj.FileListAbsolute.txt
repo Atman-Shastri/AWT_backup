@@ -1,0 +1,2 @@
+E:\182\Module 5 and 6\Client_Project\obj\Debug\Client_Project.csproj.AssemblyReference.cache
+E:\182\Module 5 and 6\Client_Project\obj\Debug\Client_Project.csproj.CoreCompileInputs.cache
