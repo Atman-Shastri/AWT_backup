@@ -14,9 +14,9 @@
                     <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HomeConnection %>" SelectCommand="SELECT [name] FROM [emp] WHERE ([name] = @name)">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [name] FROM [emp] WHERE ([name] = @name)">
                 <SelectParameters>
-                    <asp:QueryStringParameter Name="name" QueryStringField="name" Type="String" />
+                    <asp:QueryStringParameter Name="name" QueryStringField="name" Type="String" DefaultValue="Atman" />
                 </SelectParameters>
             </asp:SqlDataSource>
         </div>

@@ -74,6 +74,7 @@
     <Content Include="Disconnected Architecture.aspx" />
     <Content Include="Connected Architecture.aspx" />
     <Content Include="SampleStyleSheet.css" />
+    <Content Include="StoredProcedure.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +93,13 @@
       <DependentUpon>Connected Architecture.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoredProcedure.aspx.cs">
+      <DependentUpon>StoredProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoredProcedure.aspx.designer.cs">
+      <DependentUpon>StoredProcedure.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -12,7 +12,7 @@ namespace StoredProcedure
     {
         public void GridFill()
         {
-            string cs = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf;Integrated Security=True";
+            string cs = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(cs);
             con.Open();
             SqlCommand cmd = new SqlCommand(cs, con);
@@ -42,8 +42,7 @@ namespace StoredProcedure
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            string cs = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf;Integrated Security=True";
-            SqlConnection con = new SqlConnection(cs);
+            string cs = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf;Integrated Security=True"; SqlConnection con = new SqlConnection(cs);
             con.Open();
             SqlCommand cmd = new SqlCommand(cs, con);
             cmd.CommandText = "insert into emp(name) values ('" + Insert_Name_TextBox.Text + "')";

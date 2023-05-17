@@ -14,7 +14,6 @@ namespace StoredProcedure
     
     public partial class emp
     {
-        public int Id { get; set; }
-        public string name { get; set; }
+       
     }
 }
