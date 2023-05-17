@@ -68,8 +68,21 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference2\Program_4.disco" />
+    <None Include="Connected Services\ServiceReference2\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Program_3.aspx" />
     <Content Include="Program_3.svc" />
+    <Content Include="Program_4.aspx" />
+    <Content Include="Program_4.svc" />
     <Content Include="Web.config" />
     <None Include="Connected Services\ServiceReference1\Program_31.xsd">
       <SubType>Designer</SubType>
@@ -81,7 +94,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="IProgram_3.cs" />
+    <Compile Include="IProgram_4.cs" />
     <Compile Include="Program_3.aspx.cs">
       <DependentUpon>Program_3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,16 +111,35 @@
     <Compile Include="Program_3.svc.cs">
       <DependentUpon>Program_3.svc</DependentUpon>
     </Compile>
+    <Compile Include="Program_4.aspx.cs">
+      <DependentUpon>Program_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program_4.aspx.designer.cs">
+      <DependentUpon>Program_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program_4.svc.cs">
+      <DependentUpon>Program_4.svc</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Connected Services\ServiceReference1\Program_3.wsdl" />
     <None Include="Connected Services\ServiceReference1\Program_3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\ServiceReference2\Program_4.wsdl" />
+    <None Include="Connected Services\ServiceReference2\Program_4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference2\Program_41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference2\Program_42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -114,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

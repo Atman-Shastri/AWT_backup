@@ -1,0 +1,13 @@
+﻿@model Program_5.Models.Student
+
+@{
+    ViewBag.Title = "ShowStudent";
+}
+
+<h2>ShowStudent</h2>
+
+<div>Student ID: @Model.StudentID</div>
+<div>
+    Student Name: @Html.Label("stname", Model.StudentName)
+</div>
+

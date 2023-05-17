@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace WCF_Module_5_and_6
+{
+    public partial class Program_41 : System.Web.UI.Page
+    {
+        private ServiceReference2.Program_4Client sc = new ServiceReference2.Program_4Client();
+        private void BindGrid()
+        {
+            DataSet ds = new DataSet();
+            ds = sc.selectdata();
+            GridView1.DataSource = ds;
+            GridView1.DataBind();
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!this.IsPostBack)
+            {
+                this.BindGrid();
+            }
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            int res = sc.insertData(TextBox1.Text, TextBox2.Text);
+            if (res > 0)
+            {
+                Response.Write("Inserted");
+            }
+            this.BindGrid();
+
+        }
+    }
+}
