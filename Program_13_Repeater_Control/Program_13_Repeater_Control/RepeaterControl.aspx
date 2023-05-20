@@ -9,29 +9,26 @@
 <body>
     <form id="form1" runat="server">
         <div>
-
-            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
-                <HeaderTemplate>
-                <table>
-                        <tr >
-                            <th>
-                                <b> Id</b>
-                            </th>
-                            <th>
-                                <b>Name</b>
-                            </th>
-                           
-
-            </HeaderTemplate>
-                   <ItemTemplate>
+<asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
+               <HeaderTemplate>
+                   <table border="1" style="font-family: Arial, Helvetica, sans-serif; font-size: medium; font-weight: bold; font-style: normal; text-align: center; background-color: #FF9933; border: thin dashed #00FFFF; table-layout: auto; border-spacing: 5px">
+                       <tr>
+                           <th>ID</th>
+                           <th>Name</th>
+                           <th>Price</th>
+                       </tr>
+               </HeaderTemplate>
+               <ItemTemplate>
                    <tr>
                        <td>
                            <asp:TextBox ID="TextBox1" runat="server" Text='<%#Eval("Id")%>' ReadOnly="True">'></asp:TextBox>
                        </td>
                        <td>
-                           <asp:TextBox ID="TextBox2" runat="server" Text='<%#Eval("name")%>'></asp:TextBox>
+                           <asp:TextBox ID="TextBox2" runat="server" Text='<%#Eval("Name")%>'></asp:TextBox>
                        </td>
-
+                       <td>
+                           <asp:TextBox ID="TextBox3" runat="server" Text='<%#Eval("Price")%>'></asp:TextBox>
+                       </td>
                        <td>
                            <asp:LinkButton ID="LinkButton1" runat="server" CommandName="Update">Update
                            </asp:LinkButton>
@@ -48,9 +45,11 @@
                             <asp:TextBox ID="TextBox4" runat="server" Text='<%#Bind("Id")%>'></asp:TextBox>
                         </td>
                         <td>
-                            <asp:TextBox ID="TextBox5" runat="server" Text='<%#Bind("name")%>'></asp:TextBox>
+                            <asp:TextBox ID="TextBox5" runat="server" Text='<%#Bind("Name")%>'></asp:TextBox>
                         </td>
-                        
+                        <td>
+                            <asp:TextBox ID="TextBox6" runat="server" Text='<%#Bind("Price")%>'></asp:TextBox>
+                        </td>
                         <td>
                             <asp:LinkButton ID="LinkButton3" runat="server" CommandName="Insert">Insert
                             </asp:LinkButton>
@@ -60,21 +59,8 @@
                 </FooterTemplate>
 
             </asp:Repeater>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:NewRepeaterControl %>" DeleteCommand="DELETE FROM [emp] WHERE [Id] = @original_Id AND (([name] = @original_name) OR ([name] IS NULL AND @original_name IS NULL))" InsertCommand="INSERT INTO [emp] ([name]) VALUES (@name)" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:NewRepeaterControl.ProviderName %>" SelectCommand="SELECT * FROM [emp]" UpdateCommand="UPDATE [emp] SET [name] = @name WHERE [Id] = @original_Id AND (([name] = @original_name) OR ([name] IS NULL AND @original_name IS NULL))">
-                <DeleteParameters>
-                    <asp:Parameter Name="original_Id" Type="Int32" />
-                    <asp:Parameter Name="original_name" Type="String" />
-                </DeleteParameters>
-                <InsertParameters>
-                    <asp:Parameter Name="name" Type="String" />
-                </InsertParameters>
-                <UpdateParameters>
-                    <asp:Parameter Name="name" Type="String" />
-                    <asp:Parameter Name="original_Id" Type="Int32" />
-                    <asp:Parameter Name="original_name" Type="String" />
-                </UpdateParameters>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [product]" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>">
             </asp:SqlDataSource>
-
         </div>
     </form>
 </body>
