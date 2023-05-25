@@ -6,13 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Program_6.Models;
+using Program_6;
 
 namespace Program_6.Controllers
 {
     public class student_dataController : Controller
     {
-        private Database1Entities db = new Database1Entities();
+        private Model1 db = new Model1();
 
         // GET: student_data
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace Program_6.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,name,class")] student_data student_data)
+        public ActionResult Create([Bind(Include = "Id,name,_class")] student_data student_data)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Program_6.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,name,class")] student_data student_data)
+        public ActionResult Edit([Bind(Include = "Id,name,_class")] student_data student_data)
         {
             if (ModelState.IsValid)
             {

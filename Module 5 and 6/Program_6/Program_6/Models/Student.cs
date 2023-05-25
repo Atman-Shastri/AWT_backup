@@ -7,16 +7,9 @@ namespace Program_6.Models
 {
     public class Student
     {
-        public int StudentID
-        {
-            get;
-            set;
-        }
-        public String StudentName
-        {
-            get;
-            set;
-        }
-
+        public int StudentID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Marks { get; set; }
     }
 }
