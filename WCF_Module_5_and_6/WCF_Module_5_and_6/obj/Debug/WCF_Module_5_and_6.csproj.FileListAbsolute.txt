@@ -5,3 +5,10 @@ E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.csproj
 E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.csproj.CoreCompileInputs.cache
 E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.dll
 E:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.pdb
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\bin\WCF_Module_5_and_6.dll.config
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\bin\WCF_Module_5_and_6.dll
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\bin\WCF_Module_5_and_6.pdb
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.csproj.AssemblyReference.cache
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.csproj.CoreCompileInputs.cache
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.dll
+F:\182\WCF_Module_5_and_6\WCF_Module_5_and_6\obj\Debug\WCF_Module_5_and_6.pdb

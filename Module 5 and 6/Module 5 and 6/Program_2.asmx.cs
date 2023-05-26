@@ -18,7 +18,7 @@ namespace Module_5_and_6
     // [System.Web.Script.Services.ScriptService]
     public class Program_2 : System.Web.Services.WebService
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\182\Module 5 and 6\Module 5 and 6\App_Data\student.mdf"";Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""F:\182\Module 5 and 6\Module 5 and 6\App_Data\student.mdf"";Integrated Security=True");
 
         [WebMethod]
         public string HelloWorld()

@@ -13,7 +13,7 @@ namespace WCF_Module_5_and_6
     // NOTE: In order to launch WCF Test Client for testing this service, please select Program_4.svc or Program_4.svc.cs at the Solution Explorer and start debugging.
     public class Program_4 : IProgram_4
     {
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\182\\WCF_Module_5_and_6\\WCF_Module_5_and_6\\App_Data\\Database1.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=F:\\182\\WCF_Module_5_and_6\\WCF_Module_5_and_6\\App_Data\\Database1.mdf;Integrated Security=True");
         public int insertData(string name, string classname)
         {
             con.Open();
