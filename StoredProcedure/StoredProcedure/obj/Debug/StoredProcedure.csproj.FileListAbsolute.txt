@@ -111,7 +111,6 @@ F:\182\StoredProcedure\StoredProcedure\bin\roslyn\VBCSCompiler.exe
 F:\182\StoredProcedure\StoredProcedure\bin\roslyn\VBCSCompiler.exe.config
 F:\182\StoredProcedure\StoredProcedure\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 F:\182\StoredProcedure\StoredProcedure\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.csproj.AssemblyReference.cache
 F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.csproj.CoreCompileInputs.cache
 F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.csproj.CopyComplete
 F:\182\StoredProcedure\StoredProcedure\obj\Debug\StoredProcedure.dll

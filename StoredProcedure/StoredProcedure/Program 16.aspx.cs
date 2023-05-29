@@ -11,7 +11,7 @@ namespace StoredProcedure
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataClasses3DataContext data = new DataClasses3DataContext("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = F:\\182\\StoredProcedure\\StoredProcedure\\App_Data\\Employee.mdf; Integrated Security = True");
         }
     }
 }
