@@ -1,0 +1,2 @@
+F:\182\Module3-17\Module3-17\obj\Debug\Module3-17.csproj.AssemblyReference.cache
+F:\182\Module3-17\Module3-17\obj\Debug\Module3-17.csproj.CoreCompileInputs.cache

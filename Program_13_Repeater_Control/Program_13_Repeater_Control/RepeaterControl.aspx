@@ -8,8 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-<asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
+       <div>
+            <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
                <HeaderTemplate>
                    <table border="1" style="font-family: Arial, Helvetica, sans-serif; font-size: medium; font-weight: bold; font-style: normal; text-align: center; background-color: #FF9933; border: thin dashed #00FFFF; table-layout: auto; border-spacing: 5px">
                        <tr>
@@ -59,7 +59,19 @@
                 </FooterTemplate>
 
             </asp:Repeater>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [product]" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [product] WHERE [Id] = @Id" InsertCommand="INSERT INTO [product] ([Name], [Price]) VALUES (@Name, @Price)" SelectCommand="SELECT * FROM [product]" UpdateCommand="UPDATE [product] SET [Name] = @Name, [Price] = @Price WHERE [Id] = @Id">
+                <DeleteParameters>
+                    <asp:Parameter Name="Id" Type="Int32" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="Name" Type="String" />
+                    <asp:Parameter Name="Price" Type="Int32" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="Name" Type="String" />
+                    <asp:Parameter Name="Price" Type="Int32" />
+                    <asp:Parameter Name="Id" Type="Int32" />
+                </UpdateParameters>
             </asp:SqlDataSource>
         </div>
     </form>
