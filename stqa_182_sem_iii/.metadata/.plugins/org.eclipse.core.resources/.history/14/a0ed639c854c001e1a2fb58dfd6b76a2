@@ -1,0 +1,16 @@
+package selenium;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class selenium {
+
+	public static void main(String[] args) {
+		System.out.println("Atman Shastri, 182");
+		System.setProperty("webdriver.chrome.driver","F:/182/stqa_182_sem_iii/geckodriver.exe"); // 1 Line
+
+		WebDriver wd = new ChromeDriver(); // 2 Line
+
+		wd.get("https://www.google.com/"); // 3 Line
+
+	}
+}
